@@ -33,6 +33,8 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
+      "react/jsx-props-no-spreading": "off",
+      "@typescript-eslint/no-empty-function": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -41,7 +43,8 @@
           "tsx": "never"
         }
       ],
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "react/prop-types": "off"
     },
     "settings": {
       "import/resolver": {
