@@ -36,6 +36,7 @@
       "react/jsx-props-no-spreading": "off",
       "@typescript-eslint/no-empty-function": "off",
       "camelcase": "off",
+      "import/no-duplicates": "off",
       "import/extensions": [
         "error",
         "ignorePackages",

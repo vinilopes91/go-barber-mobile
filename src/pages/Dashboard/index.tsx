@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { Text } from 'react-native';
 import api from '../../services/api';
 
 import { useAuth } from '../../hooks/auth';
@@ -30,7 +32,7 @@ export interface Provider {
 
 const Dashboard: React.FC = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
-  const { signOut, user } = useAuth();
+  const { user, signOut } = useAuth();
 
   const { navigate } = useNavigation();
 
